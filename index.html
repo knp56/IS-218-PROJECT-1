@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+
+    <h1> Welcome </h1>
+
+           <h2> Login Form </h2>
+            <div>
+                <p><span class="error"> * required field</span></p>
+                <form action="display.php" method="post">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email"> <span class="error">* <?php echo $emailError;?></span><br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password"> <span class="error">* <?php echo $emailError;?></span><br><br>
+                    </div>
+                    <br>
+                    <input type="submit" value="Login">
+                    <p>Click below to Register</p>
+                    <p><a href="../Registration-Form/index.html">Register</a></p>
+
+                </form>
+            </div>
+</body>
+</html>
+
+
